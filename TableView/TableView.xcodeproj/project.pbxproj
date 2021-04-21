@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		D77B774E26300E9500AEF977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B774D26300E9500AEF977 /* AppDelegate.swift */; };
 		D77B775026300E9500AEF977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B774F26300E9500AEF977 /* SceneDelegate.swift */; };
-		D77B775226300E9500AEF977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B775126300E9500AEF977 /* ViewController.swift */; };
 		D77B775526300E9500AEF977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77B775326300E9500AEF977 /* Main.storyboard */; };
 		D77B775726300E9700AEF977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77B775626300E9700AEF977 /* Assets.xcassets */; };
 		D77B775A26300E9700AEF977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77B775826300E9700AEF977 /* LaunchScreen.storyboard */; };
+		D77B77872630526D00AEF977 /* DelegatePatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B77862630526D00AEF977 /* DelegatePatternViewController.swift */; };
+		D77B778E2630545D00AEF977 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B778D2630545D00AEF977 /* SwitchTableViewCell.swift */; };
+		D77B7792263054D500AEF977 /* MultiSectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B7791263054D500AEF977 /* MultiSectionTableViewController.swift */; };
+		D77B7797263058E200AEF977 /* PhotosSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B7796263058E200AEF977 /* PhotosSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D77B774A26300E9500AEF977 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77B774D26300E9500AEF977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77B774F26300E9500AEF977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D77B775126300E9500AEF977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D77B775426300E9500AEF977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D77B775626300E9700AEF977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D77B775926300E9700AEF977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D77B775B26300E9700AEF977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77B77862630526D00AEF977 /* DelegatePatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePatternViewController.swift; sourceTree = "<group>"; };
+		D77B778D2630545D00AEF977 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		D77B7791263054D500AEF977 /* MultiSectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSectionTableViewController.swift; sourceTree = "<group>"; };
+		D77B7796263058E200AEF977 /* PhotosSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		D77B774C26300E9500AEF977 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				D77B7795263058C900AEF977 /* Model */,
+				D77B778C2630542800AEF977 /* MultiSection */,
+				D77B778B2630541900AEF977 /* DelegatePattern */,
+				D77B775326300E9500AEF977 /* Main.storyboard */,
 				D77B774D26300E9500AEF977 /* AppDelegate.swift */,
 				D77B774F26300E9500AEF977 /* SceneDelegate.swift */,
-				D77B775126300E9500AEF977 /* ViewController.swift */,
-				D77B775326300E9500AEF977 /* Main.storyboard */,
 				D77B775626300E9700AEF977 /* Assets.xcassets */,
 				D77B775826300E9700AEF977 /* LaunchScreen.storyboard */,
 				D77B775B26300E9700AEF977 /* Info.plist */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		D77B778B2630541900AEF977 /* DelegatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				D77B77862630526D00AEF977 /* DelegatePatternViewController.swift */,
+			);
+			path = DelegatePattern;
+			sourceTree = "<group>";
+		};
+		D77B778C2630542800AEF977 /* MultiSection */ = {
+			isa = PBXGroup;
+			children = (
+				D77B778D2630545D00AEF977 /* SwitchTableViewCell.swift */,
+				D77B7791263054D500AEF977 /* MultiSectionTableViewController.swift */,
+			);
+			path = MultiSection;
+			sourceTree = "<group>";
+		};
+		D77B7795263058C900AEF977 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D77B7796263058E200AEF977 /* PhotosSetting.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77B775226300E9500AEF977 /* ViewController.swift in Sources */,
+				D77B7792263054D500AEF977 /* MultiSectionTableViewController.swift in Sources */,
 				D77B774E26300E9500AEF977 /* AppDelegate.swift in Sources */,
+				D77B778E2630545D00AEF977 /* SwitchTableViewCell.swift in Sources */,
 				D77B775026300E9500AEF977 /* SceneDelegate.swift in Sources */,
+				D77B77872630526D00AEF977 /* DelegatePatternViewController.swift in Sources */,
+				D77B7797263058E200AEF977 /* PhotosSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
