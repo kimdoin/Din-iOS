@@ -183,7 +183,7 @@
             </objects>
             <point key="canvasLocation" x="1421.7391304347827" y="-531.02678571428567"/>
         </scene>
-        <!--Multi Section Table View Controller-->
+        <!--Multi Section-->
         <scene sceneID="Fja-03-QLl">
             <objects>
                 <viewController id="lXB-eY-aSO" customClass="MultiSectionTableViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -211,8 +211,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FKI-xf-d3W" kind="show" id="pEg-AW-Fgi"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="switch" textLabel="aSa-L8-j0f" style="IBUITableViewCellStyleDefault" id="QU4-1x-ohC" customClass="SwitchTableViewCell" customModule="TableView" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="switch" textLabel="aSa-L8-j0f" style="IBUITableViewCellStyleDefault" id="QU4-1x-ohC" customClass="SwitchTableViewCell" customModule="TableView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="99" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QU4-1x-ohC" id="8Mm-9e-XRg">
@@ -229,7 +232,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkmark" textLabel="UJd-N6-kWx" style="IBUITableViewCellStyleDefault" id="dWo-b8-AsU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="checkmark" textLabel="UJd-N6-kWx" style="IBUITableViewCellStyleDefault" id="dWo-b8-AsU">
                                         <rect key="frame" x="0.0" y="142.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dWo-b8-AsU" id="um1-nl-AwE">
@@ -279,11 +282,30 @@
                             <constraint firstItem="YT3-Eu-F2W" firstAttribute="leading" secondItem="iHn-Ua-RZ8" secondAttribute="leading" id="kS9-wS-h3Y"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lCu-ho-D1B"/>
+                    <navigationItem key="navigationItem" title="Multi Section" id="lCu-ho-D1B"/>
+                    <connections>
+                        <outlet property="listTableView" destination="YT3-Eu-F2W" id="res-8M-QDm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WES-uy-KdA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2179.7101449275365" y="-531.02678571428567"/>
+            <point key="canvasLocation" x="2181" y="-531"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rOk-dS-SN9">
+            <objects>
+                <viewController id="FKI-xf-d3W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0f8-l7-slB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TCg-bC-vdD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7h0-lB-BW1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyo-bQ-kg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2925" y="-531"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fNU-CD-CBe">
