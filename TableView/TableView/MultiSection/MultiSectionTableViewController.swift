@@ -115,9 +115,7 @@ extension MultiSectionTableViewController: UITableViewDataSource {
 }
 
 extension MultiSectionTableViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        <#code#>
-    }
+   
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 3 && indexPath.row == 0 {
