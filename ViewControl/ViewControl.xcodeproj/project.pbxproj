@@ -13,8 +13,11 @@
 		D7A260C22639AE2B00F04DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A260C02639AE2B00F04DB9 /* Main.storyboard */; };
 		D7A260C42639AE2D00F04DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A260C32639AE2D00F04DB9 /* Assets.xcassets */; };
 		D7A260C72639AE2D00F04DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A260C52639AE2D00F04DB9 /* LaunchScreen.storyboard */; };
-		D7A260E12639BDF700F04DB9 /* Switch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A260E02639BDF700F04DB9 /* Switch.storyboard */; };
-		D7A260EA2639C1B800F04DB9 /* Slider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A260E92639C1B800F04DB9 /* Slider.storyboard */; };
+		D7A260FB263ACC7600F04DB9 /* Slider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A260FA263ACC7600F04DB9 /* Slider.storyboard */; };
+		D7A26101263ACD2600F04DB9 /* PageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A26100263ACD2600F04DB9 /* PageControl.storyboard */; };
+		D7A26104263ACD3200F04DB9 /* Switch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A26103263ACD3200F04DB9 /* Switch.storyboard */; };
+		D7A26109263ACE8800F04DB9 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A26108263ACE8800F04DB9 /* SwitchViewController.swift */; };
+		D7A2610E263AD1A400F04DB9 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +29,11 @@
 		D7A260C32639AE2D00F04DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A260C62639AE2D00F04DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A260C82639AE2D00F04DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7A260E02639BDF700F04DB9 /* Switch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Switch.storyboard; sourceTree = "<group>"; };
-		D7A260E92639C1B800F04DB9 /* Slider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Slider.storyboard; sourceTree = "<group>"; };
+		D7A260FA263ACC7600F04DB9 /* Slider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Slider.storyboard; sourceTree = "<group>"; };
+		D7A26100263ACD2600F04DB9 /* PageControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageControl.storyboard; sourceTree = "<group>"; };
+		D7A26103263ACD3200F04DB9 /* Switch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Switch.storyboard; sourceTree = "<group>"; };
+		D7A26108263ACE8800F04DB9 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,9 @@
 		D7A260B92639AE2B00F04DB9 /* ViewControl */ = {
 			isa = PBXGroup;
 			children = (
-				D7A260E72639C19E00F04DB9 /* Slider */,
-				D7A260E42639BE6200F04DB9 /* Switch */,
+				D7A260FF263ACD0700F04DB9 /* Page Control */,
+				D7A260FE263ACCFA00F04DB9 /* Switch */,
+				D7A260F9263ACC6600F04DB9 /* Slider */,
 				D7A260BA2639AE2B00F04DB9 /* AppDelegate.swift */,
 				D7A260BC2639AE2B00F04DB9 /* SceneDelegate.swift */,
 				D7A260BE2639AE2B00F04DB9 /* ViewController.swift */,
@@ -73,20 +80,30 @@
 			path = ViewControl;
 			sourceTree = "<group>";
 		};
-		D7A260E42639BE6200F04DB9 /* Switch */ = {
+		D7A260F9263ACC6600F04DB9 /* Slider */ = {
 			isa = PBXGroup;
 			children = (
-				D7A260E02639BDF700F04DB9 /* Switch.storyboard */,
+				D7A260FA263ACC7600F04DB9 /* Slider.storyboard */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		D7A260FE263ACCFA00F04DB9 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				D7A26103263ACD3200F04DB9 /* Switch.storyboard */,
+				D7A26108263ACE8800F04DB9 /* SwitchViewController.swift */,
 			);
 			path = Switch;
 			sourceTree = "<group>";
 		};
-		D7A260E72639C19E00F04DB9 /* Slider */ = {
+		D7A260FF263ACD0700F04DB9 /* Page Control */ = {
 			isa = PBXGroup;
 			children = (
-				D7A260E92639C1B800F04DB9 /* Slider.storyboard */,
+				D7A26100263ACD2600F04DB9 /* PageControl.storyboard */,
+				D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */,
 			);
-			path = Slider;
+			path = "Page Control";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,10 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A260C72639AE2D00F04DB9 /* LaunchScreen.storyboard in Resources */,
-				D7A260E12639BDF700F04DB9 /* Switch.storyboard in Resources */,
 				D7A260C42639AE2D00F04DB9 /* Assets.xcassets in Resources */,
+				D7A26104263ACD3200F04DB9 /* Switch.storyboard in Resources */,
 				D7A260C22639AE2B00F04DB9 /* Main.storyboard in Resources */,
-				D7A260EA2639C1B800F04DB9 /* Slider.storyboard in Resources */,
+				D7A26101263ACD2600F04DB9 /* PageControl.storyboard in Resources */,
+				D7A260FB263ACC7600F04DB9 /* Slider.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +181,8 @@
 			files = (
 				D7A260BF2639AE2B00F04DB9 /* ViewController.swift in Sources */,
 				D7A260BB2639AE2B00F04DB9 /* AppDelegate.swift in Sources */,
+				D7A2610E263AD1A400F04DB9 /* PageControlViewController.swift in Sources */,
+				D7A26109263ACE8800F04DB9 /* SwitchViewController.swift in Sources */,
 				D7A260BD2639AE2B00F04DB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
