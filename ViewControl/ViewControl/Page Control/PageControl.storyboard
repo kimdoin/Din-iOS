@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2zU-Oe-Pzr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2zU-Oe-Pzr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="yCi-Wp-Pii">
-                                <rect key="frame" x="145.5" y="834" width="123" height="28"/>
+                                <rect key="frame" x="146.5" y="834" width="121.5" height="28"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="systemPinkColor"/>
                                 <connections>
@@ -26,29 +26,41 @@
                                 </connections>
                             </pageControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Ok-9l-1AV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="50" minimumInteritemSpacing="10" id="NxJ-3a-pK2">
-                                    <size key="itemSize" width="400" height="400"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="50" minimumInteritemSpacing="10" id="NxJ-3a-pK2">
+                                    <size key="itemSize" width="330" height="470"/>
+                                    <size key="estimatedItemSize" width="330" height="470"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="40" minY="0.0" maxX="250" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="qAr-Df-8Bm" customClass="ListCell" customModule="ViewControl" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="214" width="330" height="468"/>
+                                        <rect key="frame" x="40" y="192" width="330" height="468"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="330" height="468"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="four" translatesAutoresizingMaskIntoConstraints="NO" id="Rfn-gv-xhw">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="four" translatesAutoresizingMaskIntoConstraints="NO" id="Rfn-gv-xhw">
                                                     <rect key="frame" x="0.0" y="1" width="330" height="468"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="468" id="CKL-HF-tMu"/>
+                                                        <constraint firstAttribute="width" constant="330" id="y3W-jW-SWK"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Rfn-gv-xhw" secondAttribute="bottom" id="0e3-Tw-RNC"/>
+                                            <constraint firstItem="Rfn-gv-xhw" firstAttribute="leading" secondItem="qAr-Df-8Bm" secondAttribute="leading" id="98a-Mc-kao"/>
+                                            <constraint firstItem="Rfn-gv-xhw" firstAttribute="top" secondItem="qAr-Df-8Bm" secondAttribute="top" id="bWc-2F-JNe"/>
+                                            <constraint firstItem="Rfn-gv-xhw" firstAttribute="centerX" secondItem="qAr-Df-8Bm" secondAttribute="centerX" id="e5d-Lv-wQf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rfn-gv-xhw" secondAttribute="trailing" id="gnM-R2-Mf9"/>
+                                            <constraint firstItem="Rfn-gv-xhw" firstAttribute="centerY" secondItem="qAr-Df-8Bm" secondAttribute="centerY" id="s6d-RA-LvD"/>
+                                        </constraints>
                                         <size key="customSize" width="330" height="468"/>
                                         <connections>
                                             <outlet property="imgView" destination="Rfn-gv-xhw" id="r4M-Nf-Kgm"/>
@@ -60,21 +72,31 @@
                                     <outlet property="delegate" destination="2zU-Oe-Pzr" id="zAb-a2-v4X"/>
                                 </connections>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="wPL-K5-bI7">
+                                <rect key="frame" x="146" y="834" width="122" height="27.5"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemPurpleColor"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="2zU-Oe-Pzr" eventType="valueChanged" id="5LH-Ct-g2J"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2xR-qC-5bD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="8Ok-9l-1AV" secondAttribute="bottom" id="LII-oh-kft"/>
-                            <constraint firstItem="8Ok-9l-1AV" firstAttribute="top" secondItem="rSX-Wa-3QY" secondAttribute="top" id="cxh-Wc-b58"/>
+                            <constraint firstItem="wPL-K5-bI7" firstAttribute="centerX" secondItem="rSX-Wa-3QY" secondAttribute="centerX" id="1zQ-qw-qMl"/>
+                            <constraint firstItem="wPL-K5-bI7" firstAttribute="top" secondItem="8Ok-9l-1AV" secondAttribute="bottom" constant="-62" id="Hdo-TG-uxD"/>
                             <constraint firstItem="8Ok-9l-1AV" firstAttribute="leading" secondItem="2xR-qC-5bD" secondAttribute="leading" id="gyX-yG-Fnr"/>
                             <constraint firstItem="yCi-Wp-Pii" firstAttribute="bottom" secondItem="2xR-qC-5bD" secondAttribute="bottom" id="hbi-BY-62l"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ok-9l-1AV" secondAttribute="bottom" id="ktk-0f-fKJ"/>
+                            <constraint firstItem="8Ok-9l-1AV" firstAttribute="top" secondItem="2xR-qC-5bD" secondAttribute="top" id="nYF-3Y-18n"/>
                             <constraint firstItem="yCi-Wp-Pii" firstAttribute="centerX" secondItem="rSX-Wa-3QY" secondAttribute="centerX" id="vjP-OS-ivc"/>
                             <constraint firstItem="8Ok-9l-1AV" firstAttribute="trailing" secondItem="2xR-qC-5bD" secondAttribute="trailing" id="z3c-jr-HnW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="listCollectionView" destination="8Ok-9l-1AV" id="BOA-98-AeZ"/>
-                        <outlet property="pager" destination="yCi-Wp-Pii" id="vK0-ku-fMR"/>
+                        <outlet property="pager" destination="wPL-K5-bI7" id="W28-Aj-Jzu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pm9-f9-uR3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,6 +111,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NnV-WP-P5j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NnV-WP-P5j">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,13 +36,11 @@
                         <viewLayoutGuide key="safeArea" id="dYG-AK-ghF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dYG-AK-ghF" firstAttribute="trailing" secondItem="GZF-gV-MSq" secondAttribute="trailing" constant="155" id="49d-i3-YuI"/>
+                            <constraint firstItem="GZF-gV-MSq" firstAttribute="centerX" secondItem="0FI-23-jju" secondAttribute="centerX" id="0W5-Eh-6vm"/>
+                            <constraint firstItem="Ypf-9S-r9v" firstAttribute="top" secondItem="GZF-gV-MSq" secondAttribute="bottom" constant="59" id="4LO-nQ-O4z"/>
                             <constraint firstItem="O8m-9M-zdw" firstAttribute="centerX" secondItem="0FI-23-jju" secondAttribute="centerX" id="9jF-al-LRr"/>
-                            <constraint firstItem="GZF-gV-MSq" firstAttribute="top" secondItem="dYG-AK-ghF" secondAttribute="top" constant="169" id="NAC-5c-SUa"/>
-                            <constraint firstItem="GZF-gV-MSq" firstAttribute="centerX" secondItem="0FI-23-jju" secondAttribute="centerX" id="XrD-30-Aq4"/>
                             <constraint firstItem="Ypf-9S-r9v" firstAttribute="centerX" secondItem="0FI-23-jju" secondAttribute="centerX" id="YBU-aO-Y4D"/>
                             <constraint firstItem="Ypf-9S-r9v" firstAttribute="centerY" secondItem="0FI-23-jju" secondAttribute="centerY" id="blJ-Dc-MRw"/>
-                            <constraint firstItem="GZF-gV-MSq" firstAttribute="leading" secondItem="dYG-AK-ghF" secondAttribute="leading" constant="155" id="nKw-aN-uFj"/>
                             <constraint firstItem="O8m-9M-zdw" firstAttribute="top" secondItem="Ypf-9S-r9v" secondAttribute="bottom" constant="94" id="pJo-wt-1vv"/>
                         </constraints>
                     </view>

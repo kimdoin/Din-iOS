@@ -18,6 +18,8 @@
 		D7A26104263ACD3200F04DB9 /* Switch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A26103263ACD3200F04DB9 /* Switch.storyboard */; };
 		D7A26109263ACE8800F04DB9 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A26108263ACE8800F04DB9 /* SwitchViewController.swift */; };
 		D7A2610E263AD1A400F04DB9 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */; };
+		D7C92B22263C619B003AF8E8 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B21263C619B003AF8E8 /* SliderViewController.swift */; };
+		D7C92B24263C61AD003AF8E8 /* CustomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B23263C61AD003AF8E8 /* CustomSliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D7A26103263ACD3200F04DB9 /* Switch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Switch.storyboard; sourceTree = "<group>"; };
 		D7A26108263ACE8800F04DB9 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 		D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
+		D7C92B21263C619B003AF8E8 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		D7C92B23263C61AD003AF8E8 /* CustomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				D7A260FA263ACC7600F04DB9 /* Slider.storyboard */,
+				D7C92B21263C619B003AF8E8 /* SliderViewController.swift */,
+				D7C92B23263C61AD003AF8E8 /* CustomSliderViewController.swift */,
 			);
 			path = Slider;
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 				D7A260BF2639AE2B00F04DB9 /* ViewController.swift in Sources */,
 				D7A260BB2639AE2B00F04DB9 /* AppDelegate.swift in Sources */,
 				D7A2610E263AD1A400F04DB9 /* PageControlViewController.swift in Sources */,
+				D7C92B22263C619B003AF8E8 /* SliderViewController.swift in Sources */,
 				D7A26109263ACE8800F04DB9 /* SwitchViewController.swift in Sources */,
+				D7C92B24263C61AD003AF8E8 /* CustomSliderViewController.swift in Sources */,
 				D7A260BD2639AE2B00F04DB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
