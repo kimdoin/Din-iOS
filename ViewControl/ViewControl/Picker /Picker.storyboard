@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bJ7-EB-vx0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker View-->
+        <scene sceneID="wbM-BH-1uW">
+            <objects>
+                <tableViewController title="Picker View" id="bJ7-EB-vx0" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oru-Xe-3ya">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="ZnD-JG-P0N">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="rhn-Sx-BbD" style="IBUITableViewCellStyleDefault" id="lQq-Fy-4ra">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lQq-Fy-4ra" id="DL2-1e-pEB">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Text Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rhn-Sx-BbD">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BWI-ih-Yal" kind="show" id="agV-Wa-gwT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="nEY-bu-dSc" style="IBUITableViewCellStyleDefault" id="f1A-OD-ihR">
+                                        <rect key="frame" x="0.0" y="68" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1A-OD-ihR" id="qSN-QR-lHe">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Slot-Machine Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nEY-bu-dSc">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JjB-k1-Yse" kind="show" id="hXi-Gm-7Lr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="bJ7-EB-vx0" id="p0y-Oe-cuP"/>
+                            <outlet property="delegate" destination="bJ7-EB-vx0" id="4rp-Ku-bvw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="ZpU-Gu-z3w"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vd-bB-umf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="117"/>
+        </scene>
+        <!--Text Picker-->
+        <scene sceneID="p6h-Is-CRb">
+            <objects>
+                <viewController title="Text Picker" modalPresentationStyle="fullScreen" id="BWI-ih-Yal" customClass="TextPickerViewController" customModule="ViewControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHH-wS-ypd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnI-nM-vIm">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BWI-ih-Yal" id="Wgx-gU-W3P"/>
+                                    <outlet property="delegate" destination="BWI-ih-Yal" id="6hz-LV-Dpi"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UY3-Wz-z5w">
+                                <rect key="frame" x="181" y="621" width="52" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="LR7-qg-Ion"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="report:" destination="BWI-ih-Yal" eventType="touchUpInside" id="E5f-O9-OtF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gZL-TV-8qJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UY3-Wz-z5w" firstAttribute="top" secondItem="VnI-nM-vIm" secondAttribute="bottom" constant="65" id="MEG-Vu-x3W"/>
+                            <constraint firstItem="VnI-nM-vIm" firstAttribute="leading" secondItem="gZL-TV-8qJ" secondAttribute="leading" id="NPC-Jg-cc7"/>
+                            <constraint firstItem="UY3-Wz-z5w" firstAttribute="centerX" secondItem="oHH-wS-ypd" secondAttribute="centerX" id="Uy8-1V-ebt"/>
+                            <constraint firstItem="VnI-nM-vIm" firstAttribute="centerY" secondItem="oHH-wS-ypd" secondAttribute="centerY" id="evy-Et-WVg"/>
+                            <constraint firstItem="VnI-nM-vIm" firstAttribute="trailing" secondItem="gZL-TV-8qJ" secondAttribute="trailing" id="rEl-9K-8fK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HbA-QI-8Sn"/>
+                    <connections>
+                        <outlet property="picker" destination="VnI-nM-vIm" id="WCx-d2-B5H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERI-f9-W1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="-51"/>
+        </scene>
+        <!--Slot Machine Picker View Controller-->
+        <scene sceneID="cOf-00-lzN">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="JjB-k1-Yse" customClass="SlotMachinePickerViewController" customModule="ViewControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CaJ-sq-oyL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxV-jb-MM6">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JjB-k1-Yse" id="vIl-CG-5vy"/>
+                                    <outlet property="delegate" destination="JjB-k1-Yse" id="W4w-ji-fnC"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgv-B8-wqE">
+                                <rect key="frame" x="181" y="807" width="52" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kn4-Te-yO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="시작">
+                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="JjB-k1-Yse" eventType="touchUpInside" id="75D-cK-EmW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o5o-Yo-fpP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AxV-jb-MM6" firstAttribute="trailing" secondItem="o5o-Yo-fpP" secondAttribute="trailing" id="5Bq-5c-dk1"/>
+                            <constraint firstItem="AxV-jb-MM6" firstAttribute="leading" secondItem="o5o-Yo-fpP" secondAttribute="leading" id="BX4-Wt-Xd6"/>
+                            <constraint firstItem="AxV-jb-MM6" firstAttribute="centerY" secondItem="CaJ-sq-oyL" secondAttribute="centerY" id="NvG-DD-7C0"/>
+                            <constraint firstItem="o5o-Yo-fpP" firstAttribute="bottom" secondItem="Lgv-B8-wqE" secondAttribute="bottom" constant="5" id="rv7-Pa-NuE"/>
+                            <constraint firstItem="Lgv-B8-wqE" firstAttribute="centerX" secondItem="CaJ-sq-oyL" secondAttribute="centerX" id="tRU-1N-H6L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5sW-BC-OIr"/>
+                    <connections>
+                        <outlet property="picker" destination="AxV-jb-MM6" id="P3b-fw-hyI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waS-bQ-grT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="650"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

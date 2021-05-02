@@ -20,6 +20,16 @@
 		D7A2610E263AD1A400F04DB9 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */; };
 		D7C92B22263C619B003AF8E8 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B21263C619B003AF8E8 /* SliderViewController.swift */; };
 		D7C92B24263C61AD003AF8E8 /* CustomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B23263C61AD003AF8E8 /* CustomSliderViewController.swift */; };
+		D7C92B27263D9C76003AF8E8 /* DatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C92B26263D9C76003AF8E8 /* DatePicker.storyboard */; };
+		D7C92B29263D9CDE003AF8E8 /* DatePieckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B28263D9CDE003AF8E8 /* DatePieckViewController.swift */; };
+		D7C92B2B263D9EC1003AF8E8 /* CountDownTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B2A263D9EC1003AF8E8 /* CountDownTimerViewController.swift */; };
+		D7C92B2F263DAB94003AF8E8 /* ProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C92B2E263DAB94003AF8E8 /* ProgressView.storyboard */; };
+		D7C92B31263DABAB003AF8E8 /* ActivityIndicator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C92B30263DABAB003AF8E8 /* ActivityIndicator.storyboard */; };
+		D7C92B33263DAC34003AF8E8 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B32263DAC34003AF8E8 /* ProgressViewController.swift */; };
+		D7C92B35263DAC54003AF8E8 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B34263DAC54003AF8E8 /* ActivityIndicatorViewController.swift */; };
+		D7C92B38263E6A5E003AF8E8 /* Picker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C92B37263E6A5E003AF8E8 /* Picker.storyboard */; };
+		D7C92B3A263E6AA6003AF8E8 /* TextPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B39263E6AA6003AF8E8 /* TextPickerViewController.swift */; };
+		D7C92B3E263E8DD9003AF8E8 /* SlotMachinePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B3D263E8DD9003AF8E8 /* SlotMachinePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +48,16 @@
 		D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
 		D7C92B21263C619B003AF8E8 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		D7C92B23263C61AD003AF8E8 /* CustomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderViewController.swift; sourceTree = "<group>"; };
+		D7C92B26263D9C76003AF8E8 /* DatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePicker.storyboard; sourceTree = "<group>"; };
+		D7C92B28263D9CDE003AF8E8 /* DatePieckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePieckViewController.swift; sourceTree = "<group>"; };
+		D7C92B2A263D9EC1003AF8E8 /* CountDownTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerViewController.swift; sourceTree = "<group>"; };
+		D7C92B2E263DAB94003AF8E8 /* ProgressView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgressView.storyboard; sourceTree = "<group>"; };
+		D7C92B30263DABAB003AF8E8 /* ActivityIndicator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityIndicator.storyboard; sourceTree = "<group>"; };
+		D7C92B32263DAC34003AF8E8 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		D7C92B34263DAC54003AF8E8 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		D7C92B37263E6A5E003AF8E8 /* Picker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picker.storyboard; sourceTree = "<group>"; };
+		D7C92B39263E6AA6003AF8E8 /* TextPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPickerViewController.swift; sourceTree = "<group>"; };
+		D7C92B3D263E8DD9003AF8E8 /* SlotMachinePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachinePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +90,10 @@
 		D7A260B92639AE2B00F04DB9 /* ViewControl */ = {
 			isa = PBXGroup;
 			children = (
+				D7C92B36263E6A1F003AF8E8 /* Picker  */,
+				D7C92B2D263DAB57003AF8E8 /* Activity Indicator */,
+				D7C92B2C263DAB47003AF8E8 /* Progress View */,
+				D7C92B25263D9C5B003AF8E8 /* Date Picker */,
 				D7A260FF263ACD0700F04DB9 /* Page Control */,
 				D7A260FE263ACCFA00F04DB9 /* Switch */,
 				D7A260F9263ACC6600F04DB9 /* Slider */,
@@ -110,6 +134,44 @@
 				D7A2610D263AD1A400F04DB9 /* PageControlViewController.swift */,
 			);
 			path = "Page Control";
+			sourceTree = "<group>";
+		};
+		D7C92B25263D9C5B003AF8E8 /* Date Picker */ = {
+			isa = PBXGroup;
+			children = (
+				D7C92B26263D9C76003AF8E8 /* DatePicker.storyboard */,
+				D7C92B28263D9CDE003AF8E8 /* DatePieckViewController.swift */,
+				D7C92B2A263D9EC1003AF8E8 /* CountDownTimerViewController.swift */,
+			);
+			path = "Date Picker";
+			sourceTree = "<group>";
+		};
+		D7C92B2C263DAB47003AF8E8 /* Progress View */ = {
+			isa = PBXGroup;
+			children = (
+				D7C92B2E263DAB94003AF8E8 /* ProgressView.storyboard */,
+				D7C92B32263DAC34003AF8E8 /* ProgressViewController.swift */,
+			);
+			path = "Progress View";
+			sourceTree = "<group>";
+		};
+		D7C92B2D263DAB57003AF8E8 /* Activity Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				D7C92B30263DABAB003AF8E8 /* ActivityIndicator.storyboard */,
+				D7C92B34263DAC54003AF8E8 /* ActivityIndicatorViewController.swift */,
+			);
+			path = "Activity Indicator";
+			sourceTree = "<group>";
+		};
+		D7C92B36263E6A1F003AF8E8 /* Picker  */ = {
+			isa = PBXGroup;
+			children = (
+				D7C92B37263E6A5E003AF8E8 /* Picker.storyboard */,
+				D7C92B39263E6AA6003AF8E8 /* TextPickerViewController.swift */,
+				D7C92B3D263E8DD9003AF8E8 /* SlotMachinePickerViewController.swift */,
+			);
+			path = "Picker ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,11 +231,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C92B38263E6A5E003AF8E8 /* Picker.storyboard in Resources */,
 				D7A260C72639AE2D00F04DB9 /* LaunchScreen.storyboard in Resources */,
 				D7A260C42639AE2D00F04DB9 /* Assets.xcassets in Resources */,
 				D7A26104263ACD3200F04DB9 /* Switch.storyboard in Resources */,
+				D7C92B27263D9C76003AF8E8 /* DatePicker.storyboard in Resources */,
+				D7C92B31263DABAB003AF8E8 /* ActivityIndicator.storyboard in Resources */,
 				D7A260C22639AE2B00F04DB9 /* Main.storyboard in Resources */,
 				D7A26101263ACD2600F04DB9 /* PageControl.storyboard in Resources */,
+				D7C92B2F263DAB94003AF8E8 /* ProgressView.storyboard in Resources */,
 				D7A260FB263ACC7600F04DB9 /* Slider.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,12 +252,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A260BF2639AE2B00F04DB9 /* ViewController.swift in Sources */,
+				D7C92B3E263E8DD9003AF8E8 /* SlotMachinePickerViewController.swift in Sources */,
+				D7C92B29263D9CDE003AF8E8 /* DatePieckViewController.swift in Sources */,
 				D7A260BB2639AE2B00F04DB9 /* AppDelegate.swift in Sources */,
+				D7C92B35263DAC54003AF8E8 /* ActivityIndicatorViewController.swift in Sources */,
 				D7A2610E263AD1A400F04DB9 /* PageControlViewController.swift in Sources */,
 				D7C92B22263C619B003AF8E8 /* SliderViewController.swift in Sources */,
+				D7C92B33263DAC34003AF8E8 /* ProgressViewController.swift in Sources */,
 				D7A26109263ACE8800F04DB9 /* SwitchViewController.swift in Sources */,
 				D7C92B24263C61AD003AF8E8 /* CustomSliderViewController.swift in Sources */,
+				D7C92B2B263D9EC1003AF8E8 /* CountDownTimerViewController.swift in Sources */,
 				D7A260BD2639AE2B00F04DB9 /* SceneDelegate.swift in Sources */,
+				D7C92B3A263E6AA6003AF8E8 /* TextPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
