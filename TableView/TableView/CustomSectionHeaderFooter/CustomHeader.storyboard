@@ -9,28 +9,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Section Header Footer View Controller-->
+        <!--Custom Header View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SectionHeaderFooterViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="CustomHeaderViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Liv-ZH-d0t">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qD2-hq-uYF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="sectionIndexBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="6YT-VF-mH8" style="IBUITableViewCellStyleDefault" id="H5I-YM-To8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="n6h-8F-Bmx" style="IBUITableViewCellStyleDefault" id="Ebm-ru-62r">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H5I-YM-To8" id="8pz-a0-7H9">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ebm-ru-62r" id="hOL-74-nbO">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6YT-VF-mH8">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n6h-8F-Bmx">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -41,33 +40,30 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="rgB-tS-nNT"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="CWP-Qo-vjm"/>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="ag5-DR-q01"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="gXJ-ht-Ie7"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Liv-ZH-d0t" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HKf-wj-sDZ"/>
-                            <constraint firstItem="Liv-ZH-d0t" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="LDO-ou-7cj"/>
-                            <constraint firstItem="Liv-ZH-d0t" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Xwt-ql-DoS"/>
-                            <constraint firstAttribute="bottom" secondItem="Liv-ZH-d0t" secondAttribute="bottom" id="nMK-mu-nr1"/>
+                            <constraint firstAttribute="bottom" secondItem="qD2-hq-uYF" secondAttribute="bottom" id="Bvf-B8-mvi"/>
+                            <constraint firstItem="qD2-hq-uYF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Xbh-nz-MyG"/>
+                            <constraint firstItem="qD2-hq-uYF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bcC-3S-Co3"/>
+                            <constraint firstItem="qD2-hq-uYF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="diY-p0-1BK"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="listTableView" destination="Liv-ZH-d0t" id="VdB-4s-HwU"/>
+                        <outlet property="listTableView" destination="qD2-hq-uYF" id="Kqq-AF-09b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588.40579710144937" y="102.45535714285714"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
