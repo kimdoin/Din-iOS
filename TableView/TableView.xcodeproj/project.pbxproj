@@ -20,6 +20,8 @@
 		D7A78616264411CC0028F158 /* CustomHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A78615264411CC0028F158 /* CustomHeaderViewController.swift */; };
 		D7A78618264412EE0028F158 /* CustomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A78617264412EE0028F158 /* CustomHeader.xib */; };
 		D7A7861A264413C40028F158 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A78619264413C40028F158 /* CustomHeader.swift */; };
+		D7A7861C264434610028F158 /* HeaderFooter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A7861B264434610028F158 /* HeaderFooter.storyboard */; };
+		D7A7861F264435070028F158 /* HeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7861E264435070028F158 /* HeaderFooterViewController.swift */; };
 		D7C92B41263E9935003AF8E8 /* TableViewCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C92B40263E9935003AF8E8 /* TableViewCell.storyboard */; };
 		D7C92B43263E9958003AF8E8 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B42263E9958003AF8E8 /* TableViewCellViewController.swift */; };
 		D7C92B45263E99CB003AF8E8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B44263E99CB003AF8E8 /* DetailViewController.swift */; };
@@ -47,6 +49,8 @@
 		D7A78615264411CC0028F158 /* CustomHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderViewController.swift; sourceTree = "<group>"; };
 		D7A78617264412EE0028F158 /* CustomHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeader.xib; sourceTree = "<group>"; };
 		D7A78619264413C40028F158 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		D7A7861B264434610028F158 /* HeaderFooter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeaderFooter.storyboard; sourceTree = "<group>"; };
+		D7A7861E264435070028F158 /* HeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFooterViewController.swift; sourceTree = "<group>"; };
 		D7C92B40263E9935003AF8E8 /* TableViewCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewCell.storyboard; sourceTree = "<group>"; };
 		D7C92B42263E9958003AF8E8 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
 		D7C92B44263E99CB003AF8E8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		D77B774C26300E9500AEF977 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				D7A7861D2644346C0028F158 /* HeaderFooter */,
 				D7A786122644114F0028F158 /* CustomSectionHeaderFooter */,
 				D77B7795263058C900AEF977 /* Model */,
 				D7C92B4F263FF2BF003AF8E8 /* SectionHeaderFooter */,
@@ -141,6 +146,15 @@
 				D7A78619264413C40028F158 /* CustomHeader.swift */,
 			);
 			path = CustomSectionHeaderFooter;
+			sourceTree = "<group>";
+		};
+		D7A7861D2644346C0028F158 /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				D7A7861B264434610028F158 /* HeaderFooter.storyboard */,
+				D7A7861E264435070028F158 /* HeaderFooterViewController.swift */,
+			);
+			path = HeaderFooter;
 			sourceTree = "<group>";
 		};
 		D7C92B3F263E9923003AF8E8 /* TableViewCell */ = {
@@ -233,6 +247,7 @@
 				D77B775726300E9700AEF977 /* Assets.xcassets in Resources */,
 				D7C92B4A263EB5E9003AF8E8 /* CustomCell.storyboard in Resources */,
 				D7C92B41263E9935003AF8E8 /* TableViewCell.storyboard in Resources */,
+				D7A7861C264434610028F158 /* HeaderFooter.storyboard in Resources */,
 				D7A78618264412EE0028F158 /* CustomHeader.xib in Resources */,
 				D77B775526300E9500AEF977 /* Main.storyboard in Resources */,
 				D7A786142644118B0028F158 /* CustomHeader.storyboard in Resources */,
@@ -248,6 +263,7 @@
 			files = (
 				D77B7792263054D500AEF977 /* MultiSectionTableViewController.swift in Sources */,
 				D7A7861A264413C40028F158 /* CustomHeader.swift in Sources */,
+				D7A7861F264435070028F158 /* HeaderFooterViewController.swift in Sources */,
 				D77B774E26300E9500AEF977 /* AppDelegate.swift in Sources */,
 				D7C92B43263E9958003AF8E8 /* TableViewCellViewController.swift in Sources */,
 				D7C92B4C263EB601003AF8E8 /* CustomCellViewController.swift in Sources */,
