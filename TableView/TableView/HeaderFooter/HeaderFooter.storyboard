@@ -53,6 +53,9 @@
                             <constraint firstItem="VRw-Rb-11t" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="kgS-Yw-jog"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listTableView" destination="VRw-Rb-11t" id="ZoP-eC-Mtg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

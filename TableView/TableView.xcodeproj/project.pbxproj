@@ -22,6 +22,10 @@
 		D7A7861A264413C40028F158 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A78619264413C40028F158 /* CustomHeader.swift */; };
 		D7A7861C264434610028F158 /* HeaderFooter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A7861B264434610028F158 /* HeaderFooter.storyboard */; };
 		D7A7861F264435070028F158 /* HeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7861E264435070028F158 /* HeaderFooterViewController.swift */; };
+		D7A78622264816CE0028F158 /* SingleSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A78621264816CE0028F158 /* SingleSelection.storyboard */; };
+		D7A78624264816F50028F158 /* MultipleSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A78623264816F50028F158 /* MultipleSelection.storyboard */; };
+		D7A7862626481AF60028F158 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7862526481AF60028F158 /* SingleViewController.swift */; };
+		D7A7862826481B120028F158 /* MultipleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7862726481B120028F158 /* MultipleViewController.swift */; };
 		D7C92B41263E9935003AF8E8 /* TableViewCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C92B40263E9935003AF8E8 /* TableViewCell.storyboard */; };
 		D7C92B43263E9958003AF8E8 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B42263E9958003AF8E8 /* TableViewCellViewController.swift */; };
 		D7C92B45263E99CB003AF8E8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B44263E99CB003AF8E8 /* DetailViewController.swift */; };
@@ -51,6 +55,10 @@
 		D7A78619264413C40028F158 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 		D7A7861B264434610028F158 /* HeaderFooter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeaderFooter.storyboard; sourceTree = "<group>"; };
 		D7A7861E264435070028F158 /* HeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFooterViewController.swift; sourceTree = "<group>"; };
+		D7A78621264816CE0028F158 /* SingleSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleSelection.storyboard; sourceTree = "<group>"; };
+		D7A78623264816F50028F158 /* MultipleSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleSelection.storyboard; sourceTree = "<group>"; };
+		D7A7862526481AF60028F158 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		D7A7862726481B120028F158 /* MultipleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleViewController.swift; sourceTree = "<group>"; };
 		D7C92B40263E9935003AF8E8 /* TableViewCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewCell.storyboard; sourceTree = "<group>"; };
 		D7C92B42263E9958003AF8E8 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
 		D7C92B44263E99CB003AF8E8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 		D77B774C26300E9500AEF977 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				D7A78620264816B50028F158 /* Selection */,
 				D7A7861D2644346C0028F158 /* HeaderFooter */,
 				D7A786122644114F0028F158 /* CustomSectionHeaderFooter */,
 				D77B7795263058C900AEF977 /* Model */,
@@ -155,6 +164,17 @@
 				D7A7861E264435070028F158 /* HeaderFooterViewController.swift */,
 			);
 			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		D7A78620264816B50028F158 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				D7A78621264816CE0028F158 /* SingleSelection.storyboard */,
+				D7A78623264816F50028F158 /* MultipleSelection.storyboard */,
+				D7A7862526481AF60028F158 /* SingleViewController.swift */,
+				D7A7862726481B120028F158 /* MultipleViewController.swift */,
+			);
+			path = Selection;
 			sourceTree = "<group>";
 		};
 		D7C92B3F263E9923003AF8E8 /* TableViewCell */ = {
@@ -245,12 +265,14 @@
 				D7C92B51263FF313003AF8E8 /* SectionHeaderFooter.storyboard in Resources */,
 				D77B775A26300E9700AEF977 /* LaunchScreen.storyboard in Resources */,
 				D77B775726300E9700AEF977 /* Assets.xcassets in Resources */,
+				D7A78624264816F50028F158 /* MultipleSelection.storyboard in Resources */,
 				D7C92B4A263EB5E9003AF8E8 /* CustomCell.storyboard in Resources */,
 				D7C92B41263E9935003AF8E8 /* TableViewCell.storyboard in Resources */,
 				D7A7861C264434610028F158 /* HeaderFooter.storyboard in Resources */,
 				D7A78618264412EE0028F158 /* CustomHeader.xib in Resources */,
 				D77B775526300E9500AEF977 /* Main.storyboard in Resources */,
 				D7A786142644118B0028F158 /* CustomHeader.storyboard in Resources */,
+				D7A78622264816CE0028F158 /* SingleSelection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +289,8 @@
 				D77B774E26300E9500AEF977 /* AppDelegate.swift in Sources */,
 				D7C92B43263E9958003AF8E8 /* TableViewCellViewController.swift in Sources */,
 				D7C92B4C263EB601003AF8E8 /* CustomCellViewController.swift in Sources */,
+				D7A7862626481AF60028F158 /* SingleViewController.swift in Sources */,
+				D7A7862826481B120028F158 /* MultipleViewController.swift in Sources */,
 				D7C92B47263EB231003AF8E8 /* WorldTime.swift in Sources */,
 				D7A78616264411CC0028F158 /* CustomHeaderViewController.swift in Sources */,
 				D77B778E2630545D00AEF977 /* SwitchTableViewCell.swift in Sources */,
