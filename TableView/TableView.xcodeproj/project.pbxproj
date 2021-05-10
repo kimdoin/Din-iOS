@@ -26,6 +26,12 @@
 		D7A78624264816F50028F158 /* MultipleSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A78623264816F50028F158 /* MultipleSelection.storyboard */; };
 		D7A7862626481AF60028F158 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7862526481AF60028F158 /* SingleViewController.swift */; };
 		D7A7862826481B120028F158 /* MultipleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7862726481B120028F158 /* MultipleViewController.swift */; };
+		D7A7862B2649064F0028F158 /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A7862A2649064F0028F158 /* Edit.storyboard */; };
+		D7A7862D2649067F0028F158 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7862C2649067F0028F158 /* EditViewController.swift */; };
+		D7A7863026494B050028F158 /* RowAction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A7862F26494B050028F158 /* RowAction.storyboard */; };
+		D7A7863226494B100028F158 /* RowActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7863126494B100028F158 /* RowActionViewController.swift */; };
+		D7A7863526495BC30028F158 /* Reordering.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A7863426495BC30028F158 /* Reordering.storyboard */; };
+		D7A7863726495BD10028F158 /* ReorderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A7863626495BD10028F158 /* ReorderingViewController.swift */; };
 		D7C92B41263E9935003AF8E8 /* TableViewCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C92B40263E9935003AF8E8 /* TableViewCell.storyboard */; };
 		D7C92B43263E9958003AF8E8 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B42263E9958003AF8E8 /* TableViewCellViewController.swift */; };
 		D7C92B45263E99CB003AF8E8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C92B44263E99CB003AF8E8 /* DetailViewController.swift */; };
@@ -59,6 +65,12 @@
 		D7A78623264816F50028F158 /* MultipleSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleSelection.storyboard; sourceTree = "<group>"; };
 		D7A7862526481AF60028F158 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 		D7A7862726481B120028F158 /* MultipleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleViewController.swift; sourceTree = "<group>"; };
+		D7A7862A2649064F0028F158 /* Edit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Edit.storyboard; sourceTree = "<group>"; };
+		D7A7862C2649067F0028F158 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		D7A7862F26494B050028F158 /* RowAction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RowAction.storyboard; sourceTree = "<group>"; };
+		D7A7863126494B100028F158 /* RowActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowActionViewController.swift; sourceTree = "<group>"; };
+		D7A7863426495BC30028F158 /* Reordering.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reordering.storyboard; sourceTree = "<group>"; };
+		D7A7863626495BD10028F158 /* ReorderingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderingViewController.swift; sourceTree = "<group>"; };
 		D7C92B40263E9935003AF8E8 /* TableViewCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewCell.storyboard; sourceTree = "<group>"; };
 		D7C92B42263E9958003AF8E8 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
 		D7C92B44263E99CB003AF8E8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +112,9 @@
 		D77B774C26300E9500AEF977 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				D7A7863326495BAB0028F158 /* Reordering */,
+				D7A7862E26494AF60028F158 /* RowAction */,
+				D7A78629264906360028F158 /* Edit */,
 				D7A78620264816B50028F158 /* Selection */,
 				D7A7861D2644346C0028F158 /* HeaderFooter */,
 				D7A786122644114F0028F158 /* CustomSectionHeaderFooter */,
@@ -175,6 +190,33 @@
 				D7A7862726481B120028F158 /* MultipleViewController.swift */,
 			);
 			path = Selection;
+			sourceTree = "<group>";
+		};
+		D7A78629264906360028F158 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				D7A7862A2649064F0028F158 /* Edit.storyboard */,
+				D7A7862C2649067F0028F158 /* EditViewController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		D7A7862E26494AF60028F158 /* RowAction */ = {
+			isa = PBXGroup;
+			children = (
+				D7A7862F26494B050028F158 /* RowAction.storyboard */,
+				D7A7863126494B100028F158 /* RowActionViewController.swift */,
+			);
+			path = RowAction;
+			sourceTree = "<group>";
+		};
+		D7A7863326495BAB0028F158 /* Reordering */ = {
+			isa = PBXGroup;
+			children = (
+				D7A7863426495BC30028F158 /* Reordering.storyboard */,
+				D7A7863626495BD10028F158 /* ReorderingViewController.swift */,
+			);
+			path = Reordering;
 			sourceTree = "<group>";
 		};
 		D7C92B3F263E9923003AF8E8 /* TableViewCell */ = {
@@ -266,7 +308,10 @@
 				D77B775A26300E9700AEF977 /* LaunchScreen.storyboard in Resources */,
 				D77B775726300E9700AEF977 /* Assets.xcassets in Resources */,
 				D7A78624264816F50028F158 /* MultipleSelection.storyboard in Resources */,
+				D7A7862B2649064F0028F158 /* Edit.storyboard in Resources */,
+				D7A7863526495BC30028F158 /* Reordering.storyboard in Resources */,
 				D7C92B4A263EB5E9003AF8E8 /* CustomCell.storyboard in Resources */,
+				D7A7863026494B050028F158 /* RowAction.storyboard in Resources */,
 				D7C92B41263E9935003AF8E8 /* TableViewCell.storyboard in Resources */,
 				D7A7861C264434610028F158 /* HeaderFooter.storyboard in Resources */,
 				D7A78618264412EE0028F158 /* CustomHeader.xib in Resources */,
@@ -291,11 +336,14 @@
 				D7C92B4C263EB601003AF8E8 /* CustomCellViewController.swift in Sources */,
 				D7A7862626481AF60028F158 /* SingleViewController.swift in Sources */,
 				D7A7862826481B120028F158 /* MultipleViewController.swift in Sources */,
+				D7A7862D2649067F0028F158 /* EditViewController.swift in Sources */,
 				D7C92B47263EB231003AF8E8 /* WorldTime.swift in Sources */,
 				D7A78616264411CC0028F158 /* CustomHeaderViewController.swift in Sources */,
 				D77B778E2630545D00AEF977 /* SwitchTableViewCell.swift in Sources */,
 				D7C92B53263FF33F003AF8E8 /* SectionHeaderFooterViewController.swift in Sources */,
+				D7A7863726495BD10028F158 /* ReorderingViewController.swift in Sources */,
 				D77B775026300E9500AEF977 /* SceneDelegate.swift in Sources */,
+				D7A7863226494B100028F158 /* RowActionViewController.swift in Sources */,
 				D7C92B4E263FF28D003AF8E8 /* Region.swift in Sources */,
 				D77B77872630526D00AEF977 /* DelegatePatternViewController.swift in Sources */,
 				D77B7797263058E200AEF977 /* PhotosSetting.swift in Sources */,

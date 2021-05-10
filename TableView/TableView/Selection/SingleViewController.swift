@@ -48,6 +48,8 @@ class SingleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showMenu(_:)))
     }
@@ -63,5 +65,58 @@ extension SingleViewController: UITableViewDataSource {
         
         cell.textLabel?.text = "\(indexPath.row)"
         return cell
+    }
+    
+    
+}
+
+extension SingleViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if indexPath.row == 0 {
+            return nil
+        }
+        return indexPath
+    } // 셀 선택 전에 호출
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let target = "\(indexPath.row)"
+        
+        showAlert(with: target)
+        
+        // 셀 선택했을때 TextColor 변경
+        tableView.cellForRow(at: indexPath)?.textLabel?.textColor = .red
+    } // 셀 선택 직후에 실행
+    
+    func tableView(_ tableView: UITableView, willDeselectRowAt indexPath: IndexPath) -> IndexPath? {
+        tableView.cellForRow(at: indexPath)?.textLabel?.textColor = .black
+        return indexPath
+    } // 선택된 셀이 해제되기 직전에 호출
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        print(#function, indexPath)
+    } // 선택된 셀이 해제된 후에 호출
+    
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return indexPath.row != 0
+    } // 셀을 강조하기 전에 호출 , true -> 강조, false -> 강조x
+    
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.textLabel?.textAlignment = .center
+    } // 셀이 강조된 다음에 호출
+    
+//    func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+//        tableView.cellForRow(at: indexPath)?.textLabel?.textColor = .systemOrange
+//    } // 강조효과가 제거된 다음에 호출
+}
+
+
+extension SingleViewController {
+    func showAlert(with value: String) {
+        let alert = UIAlertController(title: nil, message: value, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
