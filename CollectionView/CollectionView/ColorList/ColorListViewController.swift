@@ -6,6 +6,17 @@ class ColorListViewController: UIViewController {
     let list = MaterialColorDataSource.generateMultiSectionData()
     @IBOutlet weak var listCollectionView: UICollectionView!
     
+    
+    @objc func toggleScrollDirection() {
+        guard let layout = listCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        
+        //layout.scrollDirection = layout.scrollDirection == .vertical ? .horizontal : .vertical
+        
+        listCollectionView.performBatchUpdates({
+            layout.scrollDirection = layout.scrollDirection == .vertical ? .horizontal : .vertical
+        }, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +38,31 @@ class ColorListViewController: UIViewController {
  */
 
 extension ColorListViewController: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        guard let layout = collectionViewLayout as? UICollectionViewFlowLayout else { return CGSize.zero }
+
+        var bounds = collectionView.bounds
+        bounds.size.height += bounds.origin.y
+
+        var width = bounds.width - (layout.sectionInset.left + layout.sectionInset.right)
+        var height = bounds.height - (layout.sectionInset.top + layout.sectionInset.bottom)
+
+        // 스크롤 방향에 따라서 최종 높이와 넓이를 설정
+        switch layout.scrollDirection {
+        case .vertical: // 수직
+            height = (height - (layout.minimumLineSpacing * 4)) / 5
+            if indexPath.item > 0 {
+                width = (width - (layout.minimumInteritemSpacing )) / 2
+            }
+        case .horizontal:
+            width = (width - (layout.minimumLineSpacing * 2)) / 3
+            if indexPath.item > 0 {
+                height = (height - (layout.minimumInteritemSpacing * 4)) / 5
+            }
+        }
+
+        return CGSize(width: width.rounded(.down), height: height.rounded(.down))
+    } // 이 메소드는 컬렉션뷰는 셀 여백값이 필요할때마다 이 메소드를 호출
 }
 
 extension ColorListViewController: UICollectionViewDataSource {
