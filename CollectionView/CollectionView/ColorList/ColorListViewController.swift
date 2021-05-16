@@ -20,6 +20,7 @@ class ColorListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Toggle", style: .plain, target: self, action: #selector(toggleScrollDirection))
         
         if let layout = listCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.itemSize = CGSize(width: 200, height: 200) // Cell 크기
@@ -57,7 +58,8 @@ extension ColorListViewController: UICollectionViewDelegateFlowLayout {
         case .horizontal:
             width = (width - (layout.minimumLineSpacing * 2)) / 3
             if indexPath.item > 0 {
-                height = (height - (layout.minimumInteritemSpacing * 4)) / 5
+                height = (height - (layout.minimumInteritemSpacing * 2)) / 3
+                
             }
         }
 
