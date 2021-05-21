@@ -2,6 +2,7 @@ import UIKit
 
 class SelectionViewController: UIViewController {
     
+    @IBOutlet weak var listCollectionView: UICollectionView!
     lazy var list: [MaterialColorDataSource.Color] = {
         (0...2).map { _ in
             return MaterialColorDataSource.generateSingleSectionData() }.reduce([], +)
@@ -10,12 +11,18 @@ class SelectionViewController: UIViewController {
     lazy var checkImage: UIImage? = UIImage.init(named: "checked")
     
     func slectRandomItem() {
-        
-        
+        let item = Int(arc4random_uniform(UInt32(list.count)))
+        let targetIndexPath = IndexPath(row: item, section: 0)
+        listCollectionView.selectItem(at: targetIndexPath, animated: true, scrollPosition: .left)
+        let color = list[targetIndexPath.item].color
+        view.backgroundColor = color
     }
     
     func reset() {
-        
+        listCollectionView.selectItem(at: nil, animated: true, scrollPosition: .left)
+        let firstIndexPath = IndexPath(row: 0, section: 0)
+        listCollectionView.scrollToItem(at: firstIndexPath, at: .left, animated: true)
+        view.backgroundColor = .white
     }
     
     @objc func showMenu() {
@@ -42,10 +49,10 @@ class SelectionViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showMenu))
-        // Do any additional setup after loading the view.
+        
+        listCollectionView.allowsSelection = true
+        listCollectionView.allowsMultipleSelection = false
     }
-    
-    
 }
 
 extension SelectionViewController: UICollectionViewDataSource {
